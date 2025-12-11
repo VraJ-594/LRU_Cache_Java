@@ -1,8 +1,6 @@
 package com.LRUCACHE;
 
-/**
- * Node used by doubly linked list and cache. Package-private to restrict modification.
- */
+// Node used by doubly linked list and cache. Package-private to restrict modification.
 class CacheEntry<K, V> {
     final K key;
     V value;

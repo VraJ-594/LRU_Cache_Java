@@ -8,18 +8,16 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.concurrent.locks.ReentrantLock;
 
-/**
- * LRUCache implementation:
- * - Generic K, V
- * - Thread-safe via a ReentrantLock (simple and clear)
- * - Uses HashMap + DoublyLinkedList to achieve O(1) put/get/remove
- *
- * Principles applied:
- * - Single Responsibility: this class orchestrates the cache behavior.
- * - Dependency Inversion: depends on abstractions (Cache interface).
- * - KISS / YAGNI: only LRU implemented; easy to extend later.
- * - DRY: helper methods avoid repetition.
- */
+// LRUCache implementation:
+// - Generic K, V
+// - Thread-safe via a ReentrantLock (simple and clear)
+// - Uses HashMap + DoublyLinkedList to achieve O(1) put/get/remove
+
+// Principles applied:
+// - Single Responsibility: this class orchestrates the cache behavior.
+// - Dependency Inversion: depends on abstractions (Cache interface).
+// - KISS / YAGNI: only LRU implemented; easy to extend later.
+// - DRY: helper methods avoid repetition.
 public class LRUCache<K, V> implements Cache<K, V> {
     private final int capacity;
     private final Map<K, CacheEntry<K, V>> map;

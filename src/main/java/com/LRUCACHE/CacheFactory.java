@@ -2,12 +2,10 @@ package com.LRUCACHE;
 
 import com.LRUCACHE.exceptions.CacheException;
 
-/**
- * Tiny factory to create caches. Keeps construction logic in one place
- * (single responsibility and easy to expand).
- */
+// Tiny factory to create caches. Keeps construction logic in one place (single responsibility and easy to expand).
 public final class CacheFactory {
-    private CacheFactory() {}
+    private CacheFactory() {
+    }
 
     public static <K, V> Cache<K, V> createCache(EvictionPolicy policy, int capacity) throws CacheException {
         if (policy == null) throw new IllegalArgumentException("policy is null");
