@@ -20,7 +20,7 @@ A thread-safe, generic, and extensible implementation of a **Least Recently Used
 ## 🚀 Key Features
 
 - **$O(1)$ Performance:** Constant time complexity for `get`, `put`, and `remove` operations.
-- **Thread Safety:** Fully concurrent implementation using `ReentrantLock` (optimistic locking strategy).
+- **Thread Safety:** Fully concurrent implementation using `ReentrantLock` (pessimistic locking strategy).
 - **Type Safety:** Generic implementation (`Cache<K, V>`) supporting any object types.
 - **Extensible Architecture:** Built using **Factory** and **Strategy** patterns to easily support future eviction policies (FIFO, LFU) without modifying core logic.
 - **Robustness:** Comprehensive error handling with custom `CacheException`.
