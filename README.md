@@ -1,4 +1,4 @@
-# High-Performance LRU Cache (Java)
+# LRU Cache (Java)
 
 ![Java](https://img.shields.io/badge/Java-11%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-3.6%2B-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
